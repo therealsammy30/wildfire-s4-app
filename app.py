@@ -16,3 +16,8 @@ with col4:
 st.write("---")
 st.markdown("<h2 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 25px;'>Find Your Zone</h2>", unsafe_allow_html=True)
 st.markdown("<p style='font-family: Arial, sans-serif; color: #4b563; font-size: 16px;'>Find your zone to view risk data, preparation checklists, and to be part of community discussions.</p>", unsafe_allow_html=True)
+zone_col1, zone_col2 = st.columns(2)
+with zone_col1:
+    st.markdown("<h3 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 15px;'>Hills & Foothills</h3>", unsafe_allow_html=True)
+    st.error("High Risk")
+    st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; margin-top: 5px;'> The hills and foothills along are Cupertino's western border and meet the Santa Cruz Mountains. Steep canyons that accelerate upward winds, and dry flammable vegetation cause this area to face extreme wildfire risk.</p>", unsafe_allow_html=True)
