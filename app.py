@@ -13,3 +13,6 @@ with col3:
     st.metric(label="High Risk Zones", value="2")
 with col4:
     st.metric(label="Open Assembly Points", value="4 / 4")
+st.write("---")
+st.markdown("<h2 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 25px;'>Find Your Zone</h2>", unsafe_allow_html=True)
+st.markdown("<p style='font-family: Arial, sans-serif; color: #4b563; font-size: 16px;'>Find your zone to view risk data, preparation checklists, and to be part of community discussions.</p>", unsafe_allow_html=True)
