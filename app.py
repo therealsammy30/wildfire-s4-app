@@ -21,3 +21,11 @@ with zone_col1:
     st.markdown("<h3 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 15px;'>Hills & Foothills</h3>", unsafe_allow_html=True)
     st.error("High Risk")
     st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; margin-top: 5px;'> The hills and foothills are along Cupertino's western border and eventually meet the Santa Cruz Mountains. Steep canyons that tend to accelerate upward winds, and dry flammable vegetation causes this area to face extreme wildfire risk.</p>", unsafe_allow_html=True)
+    if st.button("Open Hills Hub", key="btn_hills"):
+        st.info("Entering the Hills/Foothills Community Board")
+with zone_col2:
+    st.markdown("<h3 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 15px;'>Stevens Creek Corridor</h3>", unsafe_allow_html=True)
+    st.error("High Risk")
+    st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; margin-top: 5px;'>Areas that are adjacent to Stevens Creek and the surrounding open space. With dense dry brush and limited escape routes, this area of Cupertino is a high wildfire risk area.</p>", unsafe_allow_html=True)
+    if st.button("Open Stevens Creek Hub", key="btn_stevens"):
+        st.info("Entering the Stevens Creek Corridor Community Board")
