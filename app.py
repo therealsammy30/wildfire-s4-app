@@ -39,6 +39,6 @@ with zone_col3:
 with zone_col4:
     st.markdown("<h3 style=' font-family: Arial, sans-serif; color: #1f2937; margin-top: 15px;'>North Cupertino</h3>", unsafe_allow_html=True)
     st.warning("Medium Risk")
-    st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; font-size: 14 px; margin-top: 5px;'>The northern neighborhoods bordering Sunnyvale and Santa Clara. Lower direct wildfire threats, but heavily imopacted by refional wildfire smoke and air quality hazards.</p>", unsafe_allow_html=True)
-    if st.button("Open North Hub, key="btn_north"):
+    st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; font-size: 14px; margin-top: 5px;'>The northern neighborhoods bordering Sunnyvale and Santa Clara. Lower direct wildfire threats, but heavily impacted by regional wildfire smoke and air quality hazards.</p>", unsafe_allow_html=True)
+    if st.button("Open North Hub", key="btn_north"):
         st.info("Entering the North Cupertino Community Board")
