@@ -49,3 +49,8 @@ with zone_col5:
     st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; font-size: 14px; margin-top: 5px;'>The eastern residential flatlands bordering San Jose and Saratoga. Eastern Cupertino has the lowest direct wildfire exposure, and it poses primarily as a safe destination for evacuating neighbors.</p>", unsafe_allow_html=True)
     if st.button("Open East Hub", key="btn_east"):
         st.info("Entering the East Cupertino Community Board")
+if "page" not in st.session_state:
+    st.session_state.page = "main"
+
+def go_to_page(page_name):
+    st.session_state.page = page_name
