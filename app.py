@@ -54,3 +54,9 @@ if "page" not in st.session_state:
 
 def go_to_page(page_name):
     st.session_state.page = page_name
+if st.session_state.page == "main":
+    pass
+else:
+    if st.button("⬅️ Back to Dashboard"):
+        st.session_state.page = "main"
+        st.rerun()
