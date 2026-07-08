@@ -42,3 +42,10 @@ with zone_col4:
     st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; font-size: 14px; margin-top: 5px;'>The northern neighborhoods bordering Sunnyvale and Santa Clara. Lower direct wildfire threats, but heavily impacted by regional wildfire smoke and air quality hazards.</p>", unsafe_allow_html=True)
     if st.button("Open North Hub", key="btn_north"):
         st.info("Entering the North Cupertino Community Board")
+zone_col5 = st.columns(1)[0]
+with zone_col5:
+    st.markdown("<h3 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 15px; '>East Cupertino</h3>", unsafe_allow_html=True)
+    st.success("Low Risk")
+    st.markdown("<p style='font-family: Arial, sans-serif; color: #4b5563; font-size: 14px; margin-top: 5px;'>The eastern residential flatlands bordering San Jose and Saratoga. Eastern Cupertino has the lowest direct wildfire exposure, and it poses primarily as a safe destination for evacuating neighbors.</p>", unsafe_allow_html=True)
+    if st.button("Open East Hub", key="btn_east"):
+        st.info("Entering the East Cupertino Community Board")
