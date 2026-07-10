@@ -62,4 +62,4 @@ else:
         st.rerun()
 if st.session_state.page != "main":
     st.write(f"### Welcome to the {st.session_state.page.replace('_',' ').title()}")
-    
+    st.write("Community preparedness checklists and localized risk safety discussions will load here!")
