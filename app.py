@@ -77,3 +77,13 @@ else:
 if st.session_state.page != "main":
     st.write(f"### Welcome to the {st.session_state.page.replace('_',' ').title()}")
     st.write("Community preparedness checklists and localized risk safety discussions will load here!")
+    st.markdown("<h4 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 20px;'>Your Zone Checklist</h4>", unsafe_allow_html=True)
+    task1 = st.checkbox("Clear dry vegetation within 30 feet of your home (Defensible Space)")
+    task2 = st.checkbox("Pack an emergency Go-Bag with 3 days of water, food, and vital documents")
+    task3 = st.checkbox("Sign up for local county alerts (ReadySCC emergency notifications)")
+    completed_tasks = sum([task1, task2, task3])
+    st.progress(completed_tasks / 3)
+    st.markdown("<h4 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 30px;'>Community Board Updates</h4>", unsafe_allow_html=True)
+    st.chat_message("user").write("**Neighbor Dave:** Just finished clearing the dry brush from my front driveway slope. Anyone need help moving trimmings?")
+    st.chat_message("assistant").write("**Zone Warden Sarah:** Extreme fire weather warning issued for tomorrow afternoon. Please double-check your Go-Bags tonight!")
+    
