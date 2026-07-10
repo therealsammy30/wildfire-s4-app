@@ -86,4 +86,7 @@ if st.session_state.page != "main":
     st.markdown("<h4 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 30px;'>Community Board Updates</h4>", unsafe_allow_html=True)
     st.chat_message("user").write("**Neighbor Dave:** Just finished clearing the dry brush from my front driveway slope. Anyone need help moving trimmings?")
     st.chat_message("assistant").write("**Zone Warden Sarah:** Extreme fire weather warning issued for tomorrow afternoon. Please double-check your Go-Bags tonight!")
+    st.markdown("<h4 style='font-family: Arial, sans-serif; color: #1f2937; margin-top: 30px;'>Zone Evacuation Route Map</h4>", unsafe_allow_html=True)
+    st.map()
+    st.caption("🗺️ Interactive navigation map displaying localized assembly points, safe zones, and live traffic data.")
     
