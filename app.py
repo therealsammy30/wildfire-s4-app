@@ -60,3 +60,6 @@ else:
     if st.button("⬅️ Back to Dashboard"):
         st.session_state.page = "main"
         st.rerun()
+if st.session_state.page != "main":
+    st.write(f"### Welcome to the {st.session_state.page.replace('_',' ').title()}")
+    
